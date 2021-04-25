@@ -1,12 +1,12 @@
 import React from "react"
-import BlogPage from "./blog"
+import { Link } from 'gatsby'
 
 const IndexPage = () => {
   return (
     <div>
       <h1>Hello.</h1>
       <h2>I am swagman</h2>
-      <BlogPage />
+      <p> Diggity      <Link to="/contact">sup dawg</Link></p>
     </div>
   )
 }
