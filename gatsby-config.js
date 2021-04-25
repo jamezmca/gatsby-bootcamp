@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   /*localhost:8000/___graphql*/
   siteMetadata: {
-    title: 'Full-Stack Bootcamp',
+    title: 'Swagman Full-Stack Gatsby',
     author: 'James McArthur'
   },
   plugins: [
