@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Layout from '../components/layout'
+
 
 const AboutPage = () => {
     return (
         <div>
-            <Link to="/contact">Swig Swag</Link>
+            <Layout>
+                <Link to="/contact">Swig Swag</Link>
+            </Layout>
         </div>
     )
 }
