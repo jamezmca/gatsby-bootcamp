@@ -12,6 +12,22 @@ module.exports = {
     author: 'James McArthur'
   },
   plugins: [
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    }
   ],
 }
+
+let activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+console.log('Using environment config: ${activeEnv}')
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
