@@ -5,6 +5,8 @@ date: "2021-04-26"
 
 I just launched a new bootcamp!
 
+![illidan](./illidan.jpeg)
+
 ## Topics Covered
 
 1. Gatsby
