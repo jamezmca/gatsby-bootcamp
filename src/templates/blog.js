@@ -8,17 +8,18 @@ export const query = graphql`
     contentfulProjectPost(slug: {eq: $slug}) {
       title
       publishedDate(formatString:"MMMM Do, YYYY")
+      body {
+        raw
+      }
     }
   }
 `
-
-
-
 const Blog = (props) => {
     return (
         <Layout>
           <h1>{props.data.contentfulProjectPost.title}</h1>
           <p>{props.data.contentfulProjectPost.publishedDate}</p>
+          {documentToReactComponents(JSON.parse(props.data.contentfulProjectPost.body.raw))}
         </Layout>
     )
 }
